@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Form</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/CSS_2.css">
+  <script src="JavaScript/JavaScript_2.js"></script>
+</head>
+
+<body>
+  <h2>HTML Form</h2>
+
+  <div class="container">
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Your Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Email Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email address">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="message">Message</label>
+        </div>
+        <div class="col-75">
+          <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
