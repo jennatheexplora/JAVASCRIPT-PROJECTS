@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guinea Pig Parenting</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/one-page-website.css">
+    <script src="JS/one-page-website.js" defer></script>
+    <meta name="description"
+        content="Here you can read all about what it takes to be a guinea pig parent and what to expect from your furry little besties.">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container1">
+            <h1>Guinea Pig Parenting 101</h1>
+            <img src="Images/guinea-pig-drawing.jpeg" alt="A cute drawing of a guinea pig">
+        </div>
+    </header>
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <a href="#diet">
+                <li>Diet</li>
+            </a>
+            <a href="#habitat">
+                <li>Habitat</li>
+            </a>
+            <a href="#social">
+                <li>Play & Social Needs</li>
+            </a>
+            <a href="#images">
+                <li>Photo & Video Gallery</li>
+            </a>
+        </ul>
+    </nav>
+    <!--HOMEPAGE-->
+    <section>
+        <div>
+            <h2>Guinea Pig Care</h2>
+            <div>
+                <!--DIET-->
+                <div id="diet">
+                    <h3>Dietary Needs and Restrictions</h3>
+                    <p>Unlike rabbits, guinea pigs cannot synthesize Vitamin C so they have to get it from their diet.
+                        The majority of packaged guinea pig foods, such as pellets, contain the required amounts of
+                        Vitamin C in their recipes. Fresh foods can also be a good source, if your piggies like to eat
+                        them. Mine prefer Bok Choy and Romaine lettuce, but many guinea pigs also like a good bell
+                        pepper.</p>
+                </div>
+                <!--HABITAT-->
+                <div id="habitat">
+                    <h3>Habitat and Cleanliness</h3>
+                    <p>It is very important to your pet's health that you keep their cage and other living areas clean.
+                        An easy option to care for are fleece mats to line the bottom of the cage, as these are machine
+                        washable. But piggies like to dig down into soft materials for comfort, so I recommend also
+                        including an area with wood shavings or another type of loose bedding.</p>
+                </div>
+                <!--SOCIAL-->
+                <div id="social">
+                    <h3>Play and Social Needs</h3>
+                    <p>In the wild, guinea pigs live in family groups of up to ten adults. The social aspect of their
+                        life is very important for their wellbeing and so it is recommended to keep pet guinea pigs in
+                        pairs or trios. But be careful! Should you have a male and a female that are unaltered, babies
+                        are likely to ensue pretty quickly.</p>
+                </div>
+                <!--IMAGES-->
+                <div id="images" class="row">
+                    <h3>Photo & Video Gallery</h3>
+                    <p>Click to enlarge</p>
+                    <div class="column">
+                        <img src="Images/pig-cage.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"
+                            alt="Picture of two guinea pigs exploring their cage.">
+                    </div>
+                    <div class="column">
+                        <img src="Images/3pigs.png" onclick="openModal();currentSlide(2)" class="hover-shadow"
+                            alt="Picture of a white and gray guinea pig opening its mouth to eat a small flower.">
+                    </div>
+                    <div class="column">
+                        <img src="Images/pig2.png" onclick="openModal();currentSlide(3)" class="hover-shadow"
+                            alt="Picture of three guinea pigs together eating a large stalk of grass.">
+                    </div>
+                    <div class="column">
+                        <img src="Images/pig4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"
+                            alt="Picture of a white and brown guinea pig being held in a person's arms.">
+                    </div>
+                    <br>
+                    <h3>Beginning Pig Parenting Tips</h3>
+                </div>
+                <div id="pigVid" class="row">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aPYIHP0LTvM?si=wIwi0_3T9Q2IVa1E"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="Images/pig-cage.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="Images/3pigs.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="Images/pig2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="Images/pig4.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="gPig" src="Images/pig-cage.jpg" onclick="currentSlide(1)" alt="Two pigs in a cage">
+                </div>
+
+                <div class="column">
+                    <img class="gPig" src="Images/3pigs.png" onclick="currentSlide(2)"
+                        alt="Three piggies eating together">
+                </div>
+
+                <div class="column">
+                    <img class="gPig" src="Images/pig2.png" onclick="currentSlide(3)" alt="One pig eating a flower">
+                </div>
+
+                <div class="column">
+                    <img class="gPig" src="Images/pig4.jpg" onclick="currentSlide(4)" alt="One pig being held">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT FORM-->
+    <section>
+        <div>
+            <h4>Please provide your contact information and a brief message or inquiry.</h4>
+            <div id="contact">
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name"><br>
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone Number"><br>
+                    <input type="checkbox" id="Newsletter">
+                    <label for="Newsletter">Would you like to receive our monthly newsletter?</label><br>
+                    <textarea placeholder="Type message here..."></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>Be the best guinea pig parent you can be! We can help.</p>
+                </td>
+                <td>
+                    <p>123 Pig Way</p>
+                    <p>Rochester NY 14620</p>
+                </td>
+                <td>
+                    <p>500-111-1234</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
